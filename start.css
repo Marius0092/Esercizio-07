@@ -1,0 +1,39 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "main1 main2 aside"
+    "footer footer aside";
+}
+
+#green {
+    grid-area: header;
+}
+
+#yellow {
+    grid-area: main1;    
+}
+
+#red {
+    grid-area: main2;
+}
+
+#blue {
+    grid-area: aside;
+}
+
+#orange {
+    grid-area: footer;
+}
+
+#yellow > ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#red > ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
